@@ -231,8 +231,7 @@ section {
 }
 
 .header.sticked {
-    background: var(--color-white);
-    box-shadow: 0px 2px 20px rgba(var(--color-secondary-rgb), 0.1);
+    /* box-shadow: 0px 2px 20px rgba(var(--color-secondary-rgb), 0.1); */
 }
 
 .header .logo img {
@@ -256,7 +255,8 @@ section {
 .header .btn-getstarted:focus {
     font-size: 16px;
     color: var(--color-white);
-    background: var(--color-primary);
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
     padding: 8px 23px;
     border-radius: 4px;
     transition: 0.3s;
@@ -266,7 +266,8 @@ section {
 .header .btn-getstarted:hover,
 .header .btn-getstarted:focus:hover {
     color: var(--color-white);
-    background: rgba(var(--color-primary-rgb), 0.85);
+    background: rgba(0, 0, 0, 0.5);
+    ;
 }
 
 @media (max-width: 1279px) {
@@ -977,6 +978,7 @@ section {
     }
 }
 
+
 /*--------------------------------------------------------------
 # Fullscreen Login Section
 --------------------------------------------------------------*/
@@ -1176,6 +1178,10 @@ section {
 # About Section
 --------------------------------------------------------------*/
 
+.about {
+    background-color: #0E1D49;
+}
+
 .about .about-img {
     position: relative;
     margin: 60px 0 0 60px;
@@ -1200,11 +1206,20 @@ section {
 }
 
 .about h3 {
-    color: var(--color-secondary);
+    color: white;
     font-family: var(--font-secondary);
     font-weight: 300;
-    font-size: 32px;
+    font-size: 48px;
     margin-bottom: 20px;
+}
+
+.about p {
+    color: white;
+    font-family: var(--font-secondary);
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: lighter;
 }
 
 @media (max-width: 768px) {
@@ -1265,12 +1280,12 @@ section {
 
 .clients {
     padding: 0 0 60px 0;
+    background-color: black;
 }
 
 .clients .swiper-slide img {
-    opacity: 0.5;
+    opacity: 0.8;
     transition: 0.3s;
-    filter: grayscale(100);
 }
 
 .clients .swiper-slide img:hover {
