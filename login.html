@@ -38,6 +38,17 @@
     <!-- Template Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- Icon -->
+    <!-- <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <style>
+        input:last-child::placeholder {
+           color: aqua;
+        }
+    </style>
 </head>
 
 <body>
@@ -54,22 +65,23 @@
         </div>
     </header>
     <!-- End Header -->
-    <section id="hero-fullscreen" class="login-fullscreen d-flex align-items-center">
-        <div class="container d-flex align-items-center" data-aos="zoom-out">
-            <div class="row">
-                <div class="col-6">
-                    <h2 class="fw-bold">A SKY FULL OF STARS</h2>
-                    <p>LIVE AT THE METAVERSE</p>
-                    <p class="border border-light rounded-2 py-3 px-5" style="color: aqua;">19 FEB 2022 • 19:00 WIB</p>
+    <section id="hero-fullscreen" class="login-fullscreen">
+        <div class="container align-items-center" data-aos="zoom-out">
+            <div class="row justify-content-between d-flex align-items-center mt-5">
+                <div class="col-5 align-items-center text-center">
+                    <h1 class="fw-bold">A SKY FULL OF STARS</h1>
+                    <p class>LIVE AT THE METAVERSE</p>
+                    <p class="rounded-2 py-3 px-5" style="color: aqua; border: 1px solid #8b8b8b;">19 FEB 2022 • 19:00 WIB</p>
                 </div>
-                <div class="col-6">
+                <div class="col-2"></div>
+                <div class="col-5">
                     <h1 class="fw-bold text-white mb-5">Login</h1>
                     <form action="index.html">
                         <div class="mb-3">
-                            <input type="email" class="form-control bg-transparent" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email or username" style=" color:aliceblue">
+                            <input type="email" class="form-control bg-transparent" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email or username">
                         </div>
                         <div class="mb-3">
-                            <input type="password" class="form-control bg-transparent" id="exampleInputPassword1" placeholder="Password" style="color:aliceblue">
+                            <input type="password" class="form-control bg-transparent" id="exampleInputPassword1" placeholder="Password">
                         </div>
                         <div class="form-check mb-3 text-white">
                             <input class="form-check-input" type="checkbox" id="remember" name="remember">
@@ -79,11 +91,15 @@
                         </div>
                         <a href="index.html" class="btn btn-light form-control py-2">Login</a>
                         <p class="text-white text-center my-4" style="font-size: small;">Or</p>
-                        <a href="index.html" class="btn btn-light form-control py-3 my-2 bg-transparent text-white border-light">
-                            <img src="" alt=""> Login with Google
+                        <a href="index.html" class="btn btn-light form-control py-3 my-2 bg-transparent text-white" style="border: 1px solid #8b8b8b">
+                            <i class="fab fa-google">
+                                Login with Google
+                            </i>
                         </a>
                         <a href="index.html" class="btn btn-light form-control py-3 my-2 text-white border-0" style="background-color: #395185;">
-                            <img src="" alt=""> Login with Facebook
+                            <i class="fab fa-facebook-square">
+                                Login with Facebook
+                            </i>
                         </a>
                         <a href="sign-up.html">
                             <p class="text-end my-4" style="font-size: medium; color: #7988a8;"><u>Don't have an account?</u></p>

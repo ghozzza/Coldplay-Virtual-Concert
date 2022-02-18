@@ -2,6 +2,14 @@
     color: aqua;
 }
 
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: aqua;
+}
+
+.form-control{
+    border: 1px solid #8b8b8b;
+}
+
 /* .login-form{
     backdrop-filter: blur(2px);
     backdrop-filter: brightness(60%);
